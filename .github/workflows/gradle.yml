@@ -35,10 +35,10 @@ jobs:
       with:
         arguments: build
     - name: Debug List all files
-      run: ls ./iCommon-Fabric-1.21.4 -R
+      run: ls ./iCommon-Fabric-1.21.4/build -R
     - name: Upload build artifact
       uses: actions/upload-artifact@v4
       with:
         name: built-jar
-        path: build/libs/*.jar
+        path: iCommon-Fabric-1.21.4/build/libs/*.jar
 
